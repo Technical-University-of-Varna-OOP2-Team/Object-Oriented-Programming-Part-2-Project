@@ -18,6 +18,7 @@ University group project for "Object Oriented Programming - Part 2 Project"
 - [PosgreSQL](https://www.postgresql.org/)
 - [JUnit](https://junit.org/junit5/)
 - [Log4j](https://logging.apache.org/log4j/2.x/)
+- [Maven](https://maven.apache.org/)
 
 ## License
 
