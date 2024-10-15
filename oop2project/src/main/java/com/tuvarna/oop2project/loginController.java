@@ -42,6 +42,7 @@ public class loginController {
         if (authenticate(user, pass)) {
             errorText.setText("");
             loginText.setText("LOGIN SUCCESSFUL!");
+            openAdminPage();
         } else {
             errorText.setText("Invalid credentials");
             loginText.setText("");
@@ -50,9 +51,22 @@ public class loginController {
 
     private boolean authenticate(String username, String password) {
         // Implement actual authentication logic here
+        //TODO: open admin page only if the admin logins
         return "admin".equals(username) && "admin".equals(password);
     }
 
+    private void openAdminPage() {
+        try {
+            Parent adminPage = FXMLLoader.load(getClass().getResource("admin/adminPage.fxml"));
+            Stage stage = (Stage) loginText.getScene().getWindow(); // Get the current stage
+
+            Scene scene = new Scene(adminPage);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public void goToContactPage(ActionEvent event) throws IOException {
         Parent contactPage = FXMLLoader.load(getClass().getResource("contact.fxml"));
 
