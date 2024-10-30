@@ -4,16 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7c1a3ac-5916-4652-889d-f12c44a0b15f" name="Changes" comment="Changed the names of Controller.java and view.fxml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f7c1a3ac-5916-4652-889d-f12c44a0b15f" name="Changes" comment=".">
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/admin/adminPage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/admin/hotelCreation.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/admin/ownerCreation.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/contact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/contact.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -31,7 +47,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2mvd73M6thrz2cICpvFZHK7Vu0i" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,7 +62,7 @@
     "Maven. [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "kraziman",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Program Files (x86)/javafx-sdk-17.0.12/lib",
@@ -105,12 +123,60 @@
       <option name="project" value="LOCAL" />
       <updated>1728199119564</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed the names of Controller.java and view.fxml">
+      <option name="closed" value="true" />
+      <created>1730282105690</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730282105690</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".">
+      <option name="closed" value="true" />
+      <created>1730282123045</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730282123045</updated>
+    </task>
+    <task id="LOCAL-00005" summary=".">
+      <option name="closed" value="true" />
+      <created>1730282242847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730282242847</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="kraziman" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Changed the names of Controller.java and view.fxml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the names of Controller.java and view.fxml" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

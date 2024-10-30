@@ -8,6 +8,7 @@
 
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Hyperlink?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.tuvarna.oop2project.controllers.loginController">
   <padding>
@@ -22,8 +23,8 @@
   <Label>Password</Label>
   <PasswordField id="password"  fx:id="password"/>
 
-  <Label fx:id="loginText"/>
-
   <Button text="Login" onAction="#loginButtonClicked"/>
+
+  <Hyperlink layoutX="200" layoutY="300" onAction="#goToContactPage" text="Contact us" />
 
 </VBox>

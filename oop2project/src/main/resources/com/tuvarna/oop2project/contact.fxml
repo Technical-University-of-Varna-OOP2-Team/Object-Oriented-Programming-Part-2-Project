@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="315.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.ContactController">
+<AnchorPane prefHeight="315.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.ContactController">
    <children>
       <Text layoutX="79.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to add your hotel text us at: asd@gmail.com">
          <font>
