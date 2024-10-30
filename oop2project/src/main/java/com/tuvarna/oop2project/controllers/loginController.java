@@ -53,6 +53,7 @@ public class loginController {
         // TODO: check the db for the existence of a give user+pass combo
         return "admin".equals(username) && "admin".equals(password);
 
+
     }
 
     private void closeCurrentStage() {
