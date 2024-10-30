@@ -52,6 +52,7 @@ public class loginController {
     private boolean authenticate(String username, String password) {
         // TODO: check the db for the existence of a give user+pass combo
         return "admin".equals(username) && "admin".equals(password);
+
     }
 
     private void closeCurrentStage() {
