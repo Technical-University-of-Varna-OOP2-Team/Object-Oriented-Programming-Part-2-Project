@@ -1,0 +1,88 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"f7c1a3ac-5916-4652-889d-f12c44a0b15f\" name=\"Changes\" comment=\"Added contact form\">\n      <change afterPath=\"$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/contact.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/loginController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/loginController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/oop2project/src/main/java/module-info.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/oop2project/src/main/java/module-info.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Application.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Application.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Controller.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/view.fxml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/oop2project/target/classes/module-info.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/oop2project/target/classes/module-info.class\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Kraziman&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/Technical-University-of-Varna-OOP2-Team/Object-Oriented-Programming-Part-2-Project.git&quot;,\n    &quot;accountId&quot;: &quot;f534f56d-b15b-4ac9-897d-8f372c020878&quot;\n  }\n}</component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17.0.6/javafx-base-17.0.6-mac-aarch64.jar!/javafx/beans/binding/BooleanExpression.class\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17.0.6/javafx-base-17.0.6-mac-aarch64.jar!/javafx/beans/property/BooleanPropertyBase.class\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17.0.6/javafx-base-17.0.6-mac-aarch64.jar!/javafx/beans/property/ReadOnlyBooleanPropertyBase.class\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17.0.6/javafx-base-17.0.6-mac-aarch64.jar!/javafx/beans/property/ReadOnlyBooleanWrapper.class\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17.0.6/javafx-base-17.0.6-mac-aarch64.jar!/javafx/collections/FXCollections.class\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17.0.6/javafx-base-17.0.6-mac-aarch64.jar!/javafx/collections/MapChangeListener.class\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/17.0.6/javafx-fxml-17.0.6-sources.jar!/javafx/fxml/FXMLLoader.java\" root0=\"FORCE_HIGHLIGHTING\" />\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17.0.6/javafx-graphics-17.0.6-mac-aarch64.jar!/javafx/scene/Scene.class\" root0=\"FORCE_HIGHLIGHTING\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 2\n}</component>\n  <component name=\"ProjectId\" id=\"2mvd73M6thrz2cICpvFZHK7Vu0i\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;Application.Application.executor&quot;: &quot;Run&quot;,\n    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,\n    &quot;Maven. [clean,install].executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;zlati's&quot;,\n    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;C:/Program Files (x86)/javafx-sdk-17.0.12/lib&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\titan\\IdeaProjects\\Object-Oriented-Programming-Part-2-Project\\oop2project\\src\" />\n      <recent name=\"C:\\Users\\titan\\IdeaProjects\\Object-Oriented-Programming-Part-2-Project\\oop2project\\src\\com\\tuvarna\\oop2project\" />\n    </key>\n  </component>\n  <component name=\"RunAnythingCache\">\n    <option name=\"myCommands\">\n      <command value=\"mvn clean install\" />\n    </option>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"Application\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\n      <option name=\"ALTERNATIVE_JRE_PATH\" value=\"11 (2)\" />\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"true\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.tuvarna.oop2project.Application\" />\n      <module name=\"oop2project\" />\n      <option name=\"VM_PARAMETERS\" value=\"-Djava.awt.headless=true\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"com.tuvarna.oop2project.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"Application\" factoryName=\"Application\">\n      <module name=\"oop2project\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"JarApplication\">\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\n      <method v=\"2\" />\n    </configuration>\n    <configuration default=\"true\" type=\"Java Scratch\">\n      <shortenClasspath name=\"NONE\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\n      <module name=\"Object-Oriented-Programming-Part-2-Project\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\n      <module name=\"Object-Oriented-Programming-Part-2-Project\" />\n      <option name=\"filePath\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11\" />\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"f7c1a3ac-5916-4652-889d-f12c44a0b15f\" name=\"Changes\" comment=\"\" />\n      <created>1727960813505</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1727960813505</updated>\n      <workItem from=\"1728126620496\" duration=\"3733000\" />\n      <workItem from=\"1728140213675\" duration=\"1532000\" />\n      <workItem from=\"1728143170817\" duration=\"2568000\" />\n      <workItem from=\"1728200683769\" duration=\"302000\" />\n      <workItem from=\"1728201201592\" duration=\"1231000\" />\n      <workItem from=\"1728202554518\" duration=\"247000\" />\n      <workItem from=\"1728202804341\" duration=\"1184000\" />\n      <workItem from=\"1728319520060\" duration=\"131000\" />\n      <workItem from=\"1728930534772\" duration=\"3229000\" />\n      <workItem from=\"1728933784728\" duration=\"762000\" />\n      <workItem from=\"1729000171075\" duration=\"1552000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Added contact form\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added contact form\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/loginController.java</url>\n          <line>56</line>\n          <option name=\"timeStamp\" value=\"3\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f4c5f5acdb71148c85705c25ddad3cf2f6b46428)
++++ b/.idea/workspace.xml	(date 1729002490976)
+@@ -5,15 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="f7c1a3ac-5916-4652-889d-f12c44a0b15f" name="Changes" comment="Added contact form">
+-      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/contact.fxml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/loginController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/module-info.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Application.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Controller.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/view.fxml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/target/classes/module-info.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -34,6 +26,7 @@
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
+   &quot;lastFilter&quot;: {
+@@ -41,6 +34,9 @@
+     &quot;assignee&quot;: &quot;Kraziman&quot;
+   }
+ }</component>
++  <component name="GithubDefaultAccount">
++    <option name="defaultAccountId" value="f534f56d-b15b-4ac9-897d-8f372c020878" />
++  </component>
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+     &quot;url&quot;: &quot;https://github.com/Technical-University-of-Varna-OOP2-Team/Object-Oriented-Programming-Part-2-Project.git&quot;,
+@@ -86,7 +82,7 @@
+     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+ }</component>
+@@ -174,12 +170,33 @@
+       <workItem from="1728319520060" duration="131000" />
+       <workItem from="1728930534772" duration="3229000" />
+       <workItem from="1728933784728" duration="762000" />
+-      <workItem from="1729000171075" duration="1552000" />
++      <workItem from="1729000171075" duration="1973000" />
++      <workItem from="1729002160983" duration="329000" />
+     </task>
++    <task id="LOCAL-00001" summary="Added contact form">
++      <option name="closed" value="true" />
++      <created>1729001758906</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1729001758906</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Added contact form" />
