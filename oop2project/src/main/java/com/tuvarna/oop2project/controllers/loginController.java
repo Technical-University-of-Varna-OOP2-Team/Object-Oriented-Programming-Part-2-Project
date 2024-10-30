@@ -1,9 +1,11 @@
-package com.tuvarna.oop2project;
+package com.tuvarna.oop2project.controllers;
 
+import com.tuvarna.oop2project.enums.UserType;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class loginController {
     @FXML
@@ -30,10 +32,17 @@ public class loginController {
             return;
         }
 
-        // Simulated credential check (replace with actual login logic)
         if (authenticate(user, pass)) {
             errorText.setText("");
             loginText.setText("LOGIN SUCCESSFUL!");
+            //TODO: add DB check for the user type
+            UserType userType = null;
+            try {
+                userType.returnUser();
+            } catch (Exception e){
+                e.getStackTrace();
+            }
+
         } else {
             errorText.setText("Invalid credentials");
             loginText.setText("");
@@ -41,7 +50,13 @@ public class loginController {
     }
 
     private boolean authenticate(String username, String password) {
-        // Implement actual authentication logic here
+        // TODO: check the db for the existence of a give user+pass combo
         return "admin".equals(username) && "admin".equals(password);
+    }
+
+    private void closeCurrentStage() {
+        // Get the current stage from the username field
+        Stage stage = (Stage) username.getScene().getWindow();
+        stage.close();
     }
 }
