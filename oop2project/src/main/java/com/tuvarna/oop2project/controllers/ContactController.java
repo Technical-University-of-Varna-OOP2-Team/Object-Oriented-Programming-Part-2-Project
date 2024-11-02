@@ -11,11 +11,11 @@ import java.io.IOException;
 
 public class ContactController {
     public void redirectToLogin(ActionEvent event) throws IOException {
-        Parent contactPage = FXMLLoader.load(getClass().getResource("login.fxml"));
+        Parent loginPage = FXMLLoader.load(getClass().getResource("/com/tuvarna/oop2project/login.fxml"));
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        Scene scene = new Scene(contactPage);
+        Scene scene = new Scene(loginPage);
         stage.setScene(scene);
         stage.show();
     }

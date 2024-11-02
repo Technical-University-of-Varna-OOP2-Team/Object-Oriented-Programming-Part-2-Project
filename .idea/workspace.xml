@@ -4,15 +4,66 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7c1a3ac-5916-4652-889d-f12c44a0b15f" name="Changes" comment=".">
+    <list default="true" id="f7c1a3ac-5916-4652-889d-f12c44a0b15f" name="Changes" comment="Added models">
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/administratorCreateOwnerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/administratorHotelCreationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/administratorHotelManagementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/administratorMainPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/createManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/createReceptionistController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/editHotelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/guestsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/paymentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/reportsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/roomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/roomsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/enums/ReservationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/enums/RoomStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/enums/UserType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Guest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Hotel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/ReservationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Services.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/users/Administrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/users/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/users/Owner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/users/Receptionist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/users/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/Manager/Owner/administrator/administratorCreateOwner.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/Manager/Owner/administrator/administratorHotelCreation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/Manager/Owner/administrator/administratorHotelManagement.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/Manager/Owner/administrator/administratorMainPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/Manager/Owner/createManager.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/Manager/Owner/editHotel.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/Manager/createReceptionist.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/Manager/reports.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/guests.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/payment.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/room.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/Receptionist/rooms.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/ContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/admin/adminPage.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/admin/hotelCreation.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/admin/ownerCreation.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/contact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/contact.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/ContactController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/contact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/contact.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/loginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +73,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -62,10 +114,11 @@
     "Maven. [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging Zlati",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Program Files (x86)/javafx-sdk-17.0.12/lib",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -84,6 +137,21 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.tuvarna.oop2project.Application" />
+      <module name="oop2project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tuvarna.oop2project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Object-Oriented-Programming-Part-2-Project" />
       <method v="2">
@@ -97,6 +165,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -176,7 +249,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Changed the names of Controller.java and view.fxml" />
+    <MESSAGE value="Saving workspace.xml" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Added models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added models" />
   </component>
 </project>

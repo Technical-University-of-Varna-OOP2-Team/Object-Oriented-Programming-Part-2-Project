@@ -66,7 +66,7 @@ public class loginController {
 
     //TODO: Fix this
     public void goToContactPage(ActionEvent event) throws IOException {
-        Parent contactPage = FXMLLoader.load(getClass().getResource("contact.fxml"));
+        Parent contactPage = FXMLLoader.load(getClass().getResource("/com/tuvarna/oop2project/contact.fxml"));
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
