@@ -1,4 +1,4 @@
-package com.tuvarna.oop2project;
+package com.tuvarna.oop2project.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -9,15 +9,15 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AdminController {
-
-    public void redirectToHotelCreation(ActionEvent event) throws IOException {
-        Parent contactPage = FXMLLoader.load(getClass().getResource("hotelCreation.fxml"));
+public class ContactController {
+    public void redirectToLogin(ActionEvent event) throws IOException {
+        Parent loginPage = FXMLLoader.load(getClass().getResource("/com/tuvarna/oop2project/login.fxml"));
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        Scene scene = new Scene(contactPage);
+        Scene scene = new Scene(loginPage);
         stage.setScene(scene);
         stage.show();
     }
+
 }

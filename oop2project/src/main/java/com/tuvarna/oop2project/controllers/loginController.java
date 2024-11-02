@@ -1,5 +1,6 @@
-package com.tuvarna.oop2project;
+package com.tuvarna.oop2project.controllers;
 
+import com.tuvarna.oop2project.enums.UserType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,8 +16,6 @@ import java.io.IOException;
 
 public class loginController {
     @FXML
-    private Label loginText;
-    @FXML
     private Label errorText;
     @FXML
     private TextField username;
@@ -25,7 +24,7 @@ public class loginController {
 
     @FXML
     protected void loginButtonClicked() {
-        if (username == null || password == null || errorText == null || loginText == null) {
+        if (username == null || password == null || errorText == null) {
             throw new IllegalStateException("FXML components not initialized properly");
         }
 
@@ -34,41 +33,40 @@ public class loginController {
 
         if (user.isEmpty() || pass.isEmpty()) {
             errorText.setText("You must fill the fields!");
-            loginText.setText("");
             return;
         }
 
-        // Simulated credential check (replace with actual login logic)
         if (authenticate(user, pass)) {
             errorText.setText("");
-            loginText.setText("LOGIN SUCCESSFUL!");
-            openAdminPage();
+            //TODO: add DB check for the user type
+            UserType userType = null;
+            try {
+                userType.returnUser();
+            } catch (Exception e){
+                e.getStackTrace();
+            }
+
         } else {
             errorText.setText("Invalid credentials");
-            loginText.setText("");
         }
     }
 
     private boolean authenticate(String username, String password) {
-        // Implement actual authentication logic here
-        //TODO: open admin page only if the admin logins
+        // TODO: check the db for the existence of a give user+pass combo
         return "admin".equals(username) && "admin".equals(password);
+
+
     }
 
-    private void openAdminPage() {
-        try {
-            Parent adminPage = FXMLLoader.load(getClass().getResource("admin/adminPage.fxml"));
-            Stage stage = (Stage) loginText.getScene().getWindow(); // Get the current stage
-
-            Scene scene = new Scene(adminPage);
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void closeCurrentStage() {
+        // Get the current stage from the username field
+        Stage stage = (Stage) username.getScene().getWindow();
+        stage.close();
     }
+
+    //TODO: Fix this
     public void goToContactPage(ActionEvent event) throws IOException {
-        Parent contactPage = FXMLLoader.load(getClass().getResource("contact.fxml"));
+        Parent contactPage = FXMLLoader.load(getClass().getResource("/com/tuvarna/oop2project/contact.fxml"));
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
