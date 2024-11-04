@@ -10,9 +10,10 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage loginStage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("login.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 480, 360);
+        Scene scene = new Scene(fxmlLoader.load());
         loginStage.setTitle("Hotel Manager V0.0.0");
         loginStage.setScene(scene);
+        loginStage.setResizable(false);
         loginStage.show();
     }
 

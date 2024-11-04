@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7c1a3ac-5916-4652-889d-f12c44a0b15f" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/AdminController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/ContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/css/contactStyles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/css/loginStyles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_24,_17_30_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_10_24__17_30__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/contactController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/controllers/loginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/admin/adminPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/admin/hotelCreation.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/admin/ownerCreation.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/contact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/contact.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/resources/com/tuvarna/oop2project/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/contact.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/contact.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/target/classes/com/tuvarna/oop2project/login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,14 +67,14 @@
     "Maven. [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "kraziman",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Program Files (x86)/javafx-sdk-17.0.12/lib",
+    "last_opened_file_path": "C:/Users/titan/AppData/Local/SceneBuilder/SceneBuilder.exe",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "editing.templates"
   }
 }]]></component>
   <component name="RecentsManager">

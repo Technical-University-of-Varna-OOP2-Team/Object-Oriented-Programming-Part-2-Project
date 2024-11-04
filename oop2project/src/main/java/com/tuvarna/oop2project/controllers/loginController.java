@@ -1,5 +1,6 @@
 package com.tuvarna.oop2project.controllers;
 
+import com.tuvarna.oop2project.Application;
 import com.tuvarna.oop2project.enums.UserType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -65,13 +67,14 @@ public class loginController {
     }
 
     //TODO: Fix this
-    public void goToContactPage(ActionEvent event) throws IOException {
-        Parent contactPage = FXMLLoader.load(getClass().getResource("contact.fxml"));
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        Scene scene = new Scene(contactPage);
-        stage.setScene(scene);
-        stage.show();
+    public void goToContactPage() throws IOException {
+        Stage contactScene = new Stage();
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("contact.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        contactScene.setTitle("Hotel Manager V0.0.0 - Contacts");
+        contactScene.setScene(scene);
+        contactScene.initModality(Modality.APPLICATION_MODAL);
+        contactScene.setResizable(false);
+        contactScene.show();
     }
 }
