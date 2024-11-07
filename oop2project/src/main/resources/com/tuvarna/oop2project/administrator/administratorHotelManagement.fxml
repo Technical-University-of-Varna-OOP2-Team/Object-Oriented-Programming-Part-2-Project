@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.control.Button?>
+<AnchorPane prefHeight="582.0" prefWidth="950.0" stylesheets="@../css/administratorHotelManagementStyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.administratorHotelManagementController">
+   <children>
+      <FlowPane prefHeight="26.0" prefWidth="950.0">
+         <children>
+            <Button fx:id="Tab" mnemonicParsing="false" onAction="#goToAdminMainPage" prefHeight="26.0" prefWidth="148.0" text="Main Page" />
+            <Button fx:id="Tab" mnemonicParsing="false" onAction="#goToAdminCreateOwnerPage" prefHeight="26.0" prefWidth="148.0" text="Create Owner" />
+            <Button fx:id="Tab" mnemonicParsing="false" onAction="#goToAdminHotelCreationPage" prefHeight="26.0" prefWidth="148.0" text="Create Hotel" />
+            <Button fx:id="currentTab" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Hotel Management" />
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

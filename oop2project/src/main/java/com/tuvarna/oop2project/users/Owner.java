@@ -1,8 +1,10 @@
 package com.tuvarna.oop2project.users;
 
+import javafx.stage.Stage;
+
 public class Owner extends User{
 
-    public Owner(){
-        //Open Owner stage
+    public Owner(Stage stage){
+        //Open Owner scene
     }
 }
