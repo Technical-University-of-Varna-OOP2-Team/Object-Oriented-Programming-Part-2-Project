@@ -1,33 +1,36 @@
 package com.tuvarna.oop2project.enums;
 
 import com.tuvarna.oop2project.users.*;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public enum UserType {
     ADMINISTRATOR{
         @Override
-        public User returnUser() {
-            return new Administrator();
+        public User returnUser(Stage stage) throws IOException {
+            return new Administrator(stage);
         }
     },
     OWNER{
         @Override
-        public User returnUser() {
-            return new Owner();
+        public User returnUser(Stage stage) throws IOException {
+            return new Owner(stage);
         }
     },
     MANAGER{
         @Override
-        public User returnUser() {
-            return new Manager();
+        public User returnUser(Stage stage) throws IOException {
+            return new Manager(stage);
         }
     },
     RECEPTIONIST{
         @Override
-        public User returnUser() {
-            return new Receptionist();
+        public User returnUser(Stage stage) throws IOException {
+            return new Receptionist(stage);
         }
     };
 
-    public abstract User returnUser();
+    public abstract User returnUser(Stage stage) throws IOException;
 
 }
