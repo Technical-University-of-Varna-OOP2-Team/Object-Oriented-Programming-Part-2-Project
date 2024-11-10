@@ -6,13 +6,15 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="315.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.ContactController">
+<AnchorPane prefHeight="140.0" prefWidth="266.0" stylesheets="@css/contactStyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.contactController">
    <children>
-      <Text layoutX="79.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you want to add your hotel text us at: asd@gmail.com">
+   
+         <Button layoutX="110.0" layoutY="95.0" mnemonicParsing="false" onAction="#redirectToLogin" stylesheets="@css/contactStyles.css" text="Back" />
+   
+               <Text fx:id="contactText" layoutY="30.0" text="If you want to add your hotel text us at: example@gmail.com" textAlignment="CENTER" wrappingWidth="265.01715087890625">
          <font>
-            <Font size="20.0" />
+            <Font size="15.0" />
          </font>
       </Text>
-      <Button  layoutX="273.0" layoutY="245.0" mnemonicParsing="false" text="Back" onAction="#redirectToLogin"/>
    </children>
 </AnchorPane>
