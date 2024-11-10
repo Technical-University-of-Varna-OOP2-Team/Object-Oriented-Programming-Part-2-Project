@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7c1a3ac-5916-4652-889d-f12c44a0b15f" name="Changes" comment="Added models">
-      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/enums/RoomType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/enums/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f7c1a3ac-5916-4652-889d-f12c44a0b15f" name="Changes" comment="Updated with ids">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/ReservationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/ReservationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/oop2project/src/main/java/com/tuvarna/oop2project/models/Services.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +19,13 @@
         <option value="Class" />
         <option value="Enum" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
     </option>
   </component>
   <component name="Git.Settings">
@@ -150,7 +146,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727960813505</updated>
-      <workItem from="1731238701808" duration="778000" />
+      <workItem from="1731238701808" duration="2465000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -200,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730554148988</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updated with ids">
+      <option name="closed" value="true" />
+      <created>1731239816439</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731239816439</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +239,8 @@
     <MESSAGE value="Saving workspace.xml" />
     <MESSAGE value="." />
     <MESSAGE value="Added models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added models" />
+    <MESSAGE value="Updated with ids" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated with ids" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
