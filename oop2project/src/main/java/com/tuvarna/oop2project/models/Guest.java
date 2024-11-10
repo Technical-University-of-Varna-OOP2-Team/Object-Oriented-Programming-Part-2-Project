@@ -1,14 +1,14 @@
 package com.tuvarna.oop2project.models;
 
 public class Guest {
-    private int id;
+    private long id;
     private String name;
     private String phone;
     private String address;
     private Room room;
     private double rating;
 
-    public Guest(int id, String name, String phone, String address, Room room, double rating) {
+    public Guest(long id, String name, String phone, String address, Room room, double rating) {
         this.id = id;
         this.name = name;
         this.phone = phone;
@@ -17,11 +17,11 @@ public class Guest {
         this.rating = rating;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

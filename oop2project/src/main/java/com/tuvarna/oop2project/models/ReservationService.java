@@ -1,6 +1,7 @@
 package com.tuvarna.oop2project.models;
 
 public class ReservationService {
+    private long id;
     private Reservation reservation;
     private Services service;
     private int quantity;

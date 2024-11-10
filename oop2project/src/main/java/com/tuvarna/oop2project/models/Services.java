@@ -1,24 +1,13 @@
 package com.tuvarna.oop2project.models;
 
 public class Services {
-    private int id;
+    private long id;
     private String type;
     private double price;
 
-    // Constructor
-    public Services(int id, String type, double price) {
-        this.id = id;
+    public Services(String type, double price) {
         this.type = type;
         this.price = price;
-    }
-
-    // Getters and Setters
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getType() {

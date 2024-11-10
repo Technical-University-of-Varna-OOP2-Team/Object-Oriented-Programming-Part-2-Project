@@ -6,12 +6,13 @@ import java.util.Date;
 import java.util.List;
 
 public class Reservation {
+    private long id;
     private int roomNumber;
     private Date dateFrom;
     private Date dateTo;
     private Employee employee;
     private List<Guest> guests;
-    private ReservationType type; // Basic or All-Inclusive
+    private ReservationType type;
     private double price;
 
     public Reservation(int roomNumber, Date dateFrom, Date dateTo, Employee employee, List<Guest> guests, ReservationType type, double price) {

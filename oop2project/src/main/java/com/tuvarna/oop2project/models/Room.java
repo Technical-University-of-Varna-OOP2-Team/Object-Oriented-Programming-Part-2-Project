@@ -1,19 +1,21 @@
 package com.tuvarna.oop2project.models;
 
 import com.tuvarna.oop2project.enums.RoomStatus;
+import com.tuvarna.oop2project.enums.RoomType;
 
 import java.util.Date;
 
 public class Room {
-    private int id;
+    private long id;
+    private int roomNumber;
     private int capacity;
-    private String type;
+    private RoomType type;
     private Date occupiedDate;
     private double price;
     private RoomStatus status;
 
-    public Room(int id, int capacity, String type, Date occupiedDate, double price, RoomStatus status) {
-        this.id = id;
+    public Room(int roomNumber, int capacity, RoomType type, Date occupiedDate, double price, RoomStatus status) {
+        this.roomNumber = roomNumber;
         this.capacity = capacity;
         this.type = type;
         this.occupiedDate = occupiedDate;
@@ -21,12 +23,12 @@ public class Room {
         this.status = status;
     }
 
-    public int getId() {
-        return id;
+    public int getRoomNumber() {
+        return roomNumber;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
     public int getCapacity() {
@@ -37,11 +39,11 @@ public class Room {
         this.capacity = capacity;
     }
 
-    public String getType() {
+    public RoomType getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(RoomType type) {
         this.type = type;
     }
 
