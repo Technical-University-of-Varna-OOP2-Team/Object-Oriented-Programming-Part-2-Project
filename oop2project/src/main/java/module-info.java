@@ -1,6 +1,7 @@
 module com.tuvarna.oop2project {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.persistence;
 
 
     opens com.tuvarna.oop2project to javafx.fxml;
