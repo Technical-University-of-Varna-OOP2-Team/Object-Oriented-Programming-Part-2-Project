@@ -1,21 +1,28 @@
 package com.tuvarna.oop2project.models;
 
-public class Guest {
-    private long id;
-    private String name;
-    private String phone;
-    private String address;
-    private Room room;
-    private double rating;
+import javax.persistence.*;
 
-    public Guest(long id, String name, String phone, String address, Room room, double rating) {
-        this.id = id;
-        this.name = name;
-        this.phone = phone;
-        this.address = address;
-        this.room = room;
-        this.rating = rating;
-    }
+@Entity
+@Table(name = "guests") // Maps this class to the "guests" table in the database
+public class Guest {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increment for the primary key
+    private long id;
+
+    @Column(nullable = false)
+    private String name;
+
+    @Column(nullable = false, unique = true)
+    private String phone;
+
+    private String address;
+
+    @ManyToOne
+    @JoinColumn(name = "room_id", nullable = false)
+    private Room room;
+
+    private double rating;
 
     public long getId() {
         return id;

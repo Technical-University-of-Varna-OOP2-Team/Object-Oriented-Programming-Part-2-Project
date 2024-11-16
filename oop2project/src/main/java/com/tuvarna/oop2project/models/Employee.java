@@ -1,19 +1,30 @@
 package com.tuvarna.oop2project.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "employees")
 public class Employee {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(nullable = false)
     private String name;
+
     private String position;
+
+    @Column(unique = true)
     private String phone;
+
     private double salary;
 
-    public Employee(int id, String name, String position, String phone, double salary) {
-        this.id = id;
-        this.name = name;
-        this.position = position;
-        this.phone = phone;
-        this.salary = salary;
-    }
+    @ManyToOne
+    @JoinColumn(name = "manager_id", nullable = false)
+    private User manager;
+
+
 
     public int getId() {
         return id;

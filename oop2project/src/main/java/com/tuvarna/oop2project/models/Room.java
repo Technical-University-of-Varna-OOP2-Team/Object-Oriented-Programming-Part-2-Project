@@ -3,25 +3,35 @@ package com.tuvarna.oop2project.models;
 import com.tuvarna.oop2project.enums.RoomStatus;
 import com.tuvarna.oop2project.enums.RoomType;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+@Table(name = "rooms")
 public class Room {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @Column(nullable = false, unique = true)
     private int roomNumber;
+
+    @Column(nullable = false)
     private int capacity;
+
+    @Enumerated(EnumType.STRING)
     private RoomType type;
+
+    @Temporal(TemporalType.DATE)
     private Date occupiedDate;
+
+    @Column(nullable = false)
     private double price;
+
+    @Enumerated(EnumType.STRING)
     private RoomStatus status;
 
-    public Room(int roomNumber, int capacity, RoomType type, Date occupiedDate, double price, RoomStatus status) {
-        this.roomNumber = roomNumber;
-        this.capacity = capacity;
-        this.type = type;
-        this.occupiedDate = occupiedDate;
-        this.price = price;
-        this.status = status;
-    }
 
     public int getRoomNumber() {
         return roomNumber;

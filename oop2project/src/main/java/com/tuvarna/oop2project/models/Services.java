@@ -1,14 +1,21 @@
 package com.tuvarna.oop2project.models;
 
-public class Services {
-    private long id;
-    private String type;
-    private double price;
 
-    public Services(String type, double price) {
-        this.type = type;
-        this.price = price;
-    }
+import javax.persistence.*;
+
+@Entity
+@Table(name = "services")
+public class Services {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
+    @Column(nullable = false)
+    private String type;
+
+    @Column(nullable = false)
+    private double price;
 
     public String getType() {
         return type;
