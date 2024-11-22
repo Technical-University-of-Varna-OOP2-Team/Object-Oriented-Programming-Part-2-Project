@@ -18,12 +18,10 @@ public class Employee {
     @Column(unique = true)
     private String phone;
 
+    @Column(nullable = false)
+    private Hotel hotel;
+
     private double salary;
-
-    @ManyToOne
-    @JoinColumn(name = "manager_id", nullable = false)
-    private User manager;
-
 
 
     public int getId() {
@@ -64,5 +62,13 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public Hotel getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(Hotel hotel) {
+        this.hotel = hotel;
     }
 }

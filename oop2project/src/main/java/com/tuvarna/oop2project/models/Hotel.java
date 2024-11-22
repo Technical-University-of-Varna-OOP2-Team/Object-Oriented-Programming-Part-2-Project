@@ -17,19 +17,18 @@ public class Hotel {
     @Column(nullable = false)
     private int floors;
 
+
+    //FIXME: Това е ненужно, понеже различните етажи могат да имат различен брой стаи
     @Column(nullable = false)
     private int roomsPerFloor;
 
     @OneToMany(mappedBy = "hotel", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Room> rooms;
 
-    @ManyToOne
+    //Промених го на OneToMany, понеже един хотел може да има повече от 1 собственик
+    @OneToMany
     @JoinColumn(name = "owner_id", nullable = false)
-    private User owner;
-
-    @ManyToOne
-    @JoinColumn(name = "manager_id", nullable = false)
-    private User manager;
+    private List<User> owner;
 
     public int getFloors() {
         return floors;
@@ -55,11 +54,11 @@ public class Hotel {
         this.rooms = rooms;
     }
 
-    public User getOwner() {
+    public List<User> getOwner() {
         return owner;
     }
 
-    public void setOwner(User owner) {
+    public void setOwner(List<User> owner) {
         this.owner = owner;
     }
 
@@ -69,14 +68,6 @@ public class Hotel {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public User getManager() {
-        return manager;
-    }
-
-    public void setManager(User manager) {
-        this.manager = manager;
     }
 
     public long getId() {
