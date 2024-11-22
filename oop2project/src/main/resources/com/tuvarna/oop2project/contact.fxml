@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="140.0" prefWidth="266.0" stylesheets="@css/contactStyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.contactController">
+<AnchorPane prefHeight="140.0" prefWidth="266.0" stylesheets="@css/contactStyles.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.contactController">
    <children>
    
          <Button layoutX="110.0" layoutY="95.0" mnemonicParsing="false" onAction="#redirectToLogin" stylesheets="@css/contactStyles.css" text="Back" />

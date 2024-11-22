@@ -1,27 +1,34 @@
 package com.tuvarna.oop2project.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "guests") // Maps this class to the "guests" table in the database
 public class Guest {
-    private int id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increment for the primary key
+    private long id;
+
+    @Column(nullable = false)
     private String name;
+
+    @Column(nullable = false, unique = true)
     private String phone;
+
     private String address;
+
+    @ManyToOne
+    @JoinColumn(name = "room_id", nullable = false)
     private Room room;
+
     private double rating;
 
-    public Guest(int id, String name, String phone, String address, Room room, double rating) {
-        this.id = id;
-        this.name = name;
-        this.phone = phone;
-        this.address = address;
-        this.room = room;
-        this.rating = rating;
-    }
-
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

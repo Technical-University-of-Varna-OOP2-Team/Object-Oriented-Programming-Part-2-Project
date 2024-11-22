@@ -4,14 +4,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
 
-<AnchorPane prefHeight="582.0" prefWidth="950.0" stylesheets="@../css/administratorMainPageStyles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.administratorMainPageController">
+<AnchorPane prefHeight="582.0" prefWidth="950.0" stylesheets="@../css/administratorMainPageStyles.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.administratorMainPageController">
    <children>
       <FlowPane prefHeight="26.0" prefWidth="950.0">
          <children>
             <Button fx:id="currentTab" mnemonicParsing="false" prefHeight="26.0" prefWidth="148.0" text="Main Page" />
-            <Button fx:id="Tab" mnemonicParsing="false" onAction="#goToAdminCreateOwnerPage" prefHeight="26.0" prefWidth="148.0" text="Create Owner" />
-            <Button fx:id="Tab" mnemonicParsing="false" onAction="#goToAdminHotelCreationPage" prefHeight="26.0" prefWidth="148.0" text="Create Hotel" />
-            <Button fx:id="Tab" mnemonicParsing="false" onAction="#goToAdminHotelManagementPage" prefHeight="26.0" prefWidth="148.0" text="Hotel Management" />
+            <Button fx:id="createOwnerTab" mnemonicParsing="false" onAction="#goToAdminCreateOwnerPage" prefHeight="26.0" prefWidth="148.0" text="Create Owner" />
+            <Button fx:id="createHotelTab" mnemonicParsing="false" onAction="#goToAdminHotelCreationPage" prefHeight="26.0" prefWidth="148.0" text="Create Hotel" />
+            <Button fx:id="hotelManagementTab" mnemonicParsing="false" onAction="#goToAdminHotelManagementPage" prefHeight="26.0" prefWidth="148.0" text="Hotel Management" />
          </children>
       </FlowPane>
    </children>

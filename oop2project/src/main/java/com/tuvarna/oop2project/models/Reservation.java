@@ -2,27 +2,44 @@ package com.tuvarna.oop2project.models;
 
 import com.tuvarna.oop2project.enums.ReservationType;
 
+import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
 
+@Entity
+@Table(name = "reservations")
 public class Reservation {
-    private int roomNumber;
-    private Date dateFrom;
-    private Date dateTo;
-    private Employee employee;
-    private List<Guest> guests;
-    private ReservationType type; // Basic or All-Inclusive
-    private double price;
 
-    public Reservation(int roomNumber, Date dateFrom, Date dateTo, Employee employee, List<Guest> guests, ReservationType type, double price) {
-        this.roomNumber = roomNumber;
-        this.dateFrom = dateFrom;
-        this.dateTo = dateTo;
-        this.employee = employee;
-        this.guests = guests;
-        this.type = type;
-        this.price = price;
-    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
+    @Column(nullable = false)
+    private int roomNumber;
+
+    @Temporal(TemporalType.DATE)
+    private Date dateFrom;
+
+    @Temporal(TemporalType.DATE)
+    private Date dateTo;
+
+    @ManyToOne
+    @JoinColumn(name = "employee_id", nullable = false)
+    private Employee employee;
+
+    @ManyToMany
+    @JoinTable(
+            name = "reservation_guests",
+            joinColumns = @JoinColumn(name = "reservation_id"),
+            inverseJoinColumns = @JoinColumn(name = "guest_id")
+    )
+    private List<Guest> guests;
+
+    @Enumerated(EnumType.STRING)
+    private ReservationType type;
+
+    @Column(nullable = false)
+    private double price;
 
     public int getRoomNumber() {
         return roomNumber;

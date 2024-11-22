@@ -1,15 +1,25 @@
 package com.tuvarna.oop2project.models;
 
-public class ReservationService {
-    private Reservation reservation;
-    private Services service;
-    private int quantity;
+import javax.persistence.*;
 
-    public ReservationService(Reservation reservation, Services service, int quantity) {
-        this.reservation = reservation;
-        this.service = service;
-        this.quantity = quantity;
-    }
+@Entity
+@Table(name = "reservation_services")
+public class ReservationService {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
+    @ManyToOne
+    @JoinColumn(name = "reservation_id", nullable = false)
+    private Reservation reservation;
+
+    @ManyToOne
+    @JoinColumn(name = "service_id", nullable = false)
+    private Services service;
+
+    @Column(nullable = false)
+    private int quantity;
 
     public Reservation getReservation() {
         return reservation;

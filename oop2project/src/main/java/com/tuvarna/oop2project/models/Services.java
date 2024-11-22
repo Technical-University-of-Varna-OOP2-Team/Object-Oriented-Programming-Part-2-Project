@@ -1,25 +1,21 @@
 package com.tuvarna.oop2project.models;
 
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "services")
 public class Services {
-    private int id;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
+    @Column(nullable = false)
     private String type;
+
+    @Column(nullable = false)
     private double price;
-
-    // Constructor
-    public Services(int id, String type, double price) {
-        this.id = id;
-        this.type = type;
-        this.price = price;
-    }
-
-    // Getters and Setters
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getType() {
         return type;

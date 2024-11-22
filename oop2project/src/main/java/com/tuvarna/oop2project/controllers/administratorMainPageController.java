@@ -19,7 +19,6 @@ public class administratorMainPageController {
         stage.setResizable(false);
         stage.centerOnScreen();
         stage.show();
-        System.out.println("FXML file loaded correctly.");
 
     }
 
@@ -32,7 +31,6 @@ public class administratorMainPageController {
         stage.setResizable(false);
         stage.centerOnScreen();
         stage.show();
-        System.out.println("FXML file loaded correctly.");
 
     }
 
@@ -45,7 +43,6 @@ public class administratorMainPageController {
         stage.setResizable(false);
         stage.centerOnScreen();
         stage.show();
-        System.out.println("FXML file loaded correctly.");
 
     }
 }
