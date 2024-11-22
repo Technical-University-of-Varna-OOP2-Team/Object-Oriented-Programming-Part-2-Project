@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<VBox alignment="CENTER" prefHeight="408.0" prefWidth="383.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.6" fx:controller="com.tuvarna.oop2project.controllers.loginController">
-  <padding>
-    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-  </padding>
-
-  <Label fx:id="errorText" />
-
-
-  <Label>Username</Label>
-  <TextField id="username" fx:id="username" />
-  <Label>Password</Label>
-  <PasswordField id="password" fx:id="password" />
-
-  <Button onAction="#loginButtonClicked" text="Login" />
-
-  <Hyperlink layoutX="200" layoutY="300" onAction="#goToContactPage" text="Contact us" />
-
-</VBox>
+<AnchorPane prefHeight="282.0" prefWidth="311.0" stylesheets="@css/loginStyles.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.loginController">
+   <children>
+   
+            
+              <Label layoutX="79.0" layoutY="68.0" textFill="WHITE">Username</Label>
+   
+              <Label fx:id="errorText" layoutX="8.0" layoutY="14.0" prefHeight="46.0" prefWidth="294.0" textAlignment="CENTER" wrapText="true" />
+     <TextField id="username" fx:id="username" layoutX="80.0" layoutY="86.0" promptText="username" stylesheets="@css/loginStyles.css" />
+     <Label layoutX="81.0" layoutY="123.0" textFill="WHITE">Password</Label>
+     <PasswordField id="password" fx:id="password" layoutX="81.0" layoutY="141.0" promptText="password" stylesheets="@css/loginStyles.css" />
+   
+              <Button fx:id="loginButton" layoutX="130.0" layoutY="197.0" onAction="#loginButtonClicked" text="Login" />
+   
+              <Hyperlink layoutX="123.0" layoutY="244.0" onAction="#goToContactPage" text="Contact us" />
+   </children>
+</AnchorPane>
