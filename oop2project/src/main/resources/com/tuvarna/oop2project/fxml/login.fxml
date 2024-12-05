@@ -18,7 +18,7 @@
      <Label layoutX="81.0" layoutY="123.0" textFill="WHITE">Password</Label>
      <PasswordField id="password" fx:id="password" layoutX="81.0" layoutY="141.0" promptText="password" stylesheets="@css/loginStyles.css" />
    
-              <Button fx:id="loginButton" layoutX="130.0" layoutY="197.0" onAction="#loginButtonClicked" text="Login" />
+              <Button fx:id="loginButton" defaultButton="true" layoutX="130.0" layoutY="197.0" onAction="#loginButtonClicked" text="Login" />
    
               <Hyperlink layoutX="123.0" layoutY="244.0" onAction="#goToContactPage" text="Contact us" />
    </children>

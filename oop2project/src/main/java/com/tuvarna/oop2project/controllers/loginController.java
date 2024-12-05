@@ -12,6 +12,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -68,7 +70,7 @@ public class loginController {
     //TODO: Fix this
     public void goToContactPage() throws IOException {
         Stage contactStage = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("contact.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("fxml/contact.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         contactStage.setTitle("Hotel Manager V0.0.0 - Contacts");
         contactStage.setScene(scene);

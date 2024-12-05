@@ -1,8 +1,10 @@
 module com.tuvarna.oop2project {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.persistence;
-    /*requires java.persistence;*/
+    requires java.sql;
+    requires org.hibernate.orm.core;
+    requires jakarta.persistence;
+    requires java.naming;
 
 
     opens com.tuvarna.oop2project to javafx.fxml;

@@ -1,0 +1,31 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database Connection Settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/HotelManagement</property>
+        <!--DO NOT FORGET TO REMOVE THE USERNAME/PASSWORD BEFORE COMMITING -->
+        <property name="hibernate.connection.username">password</property>
+        <property name="hibernate.connection.password">username</property>
+
+        <!-- Hibernate Properties -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Annotated Classes -->
+        <mapping class="com.tuvarna.oop2project.entity.Account"/>
+        <mapping class="com.tuvarna.oop2project.entity.Role"/>
+        <mapping class="com.tuvarna.oop2project.entity.Hotel"/>
+        <mapping class="com.tuvarna.oop2project.entity.Room"/>
+        <mapping class="com.tuvarna.oop2project.entity.Guest"/>
+        <mapping class="com.tuvarna.oop2project.entity.Reservation"/>
+        <mapping class="com.tuvarna.oop2project.entity.Employee"/>
+        <mapping class="com.tuvarna.oop2project.entity.Services"/>
+        <mapping class="com.tuvarna.oop2project.entity.ReservationService"/>
+    </session-factory>
+</hibernate-configuration>

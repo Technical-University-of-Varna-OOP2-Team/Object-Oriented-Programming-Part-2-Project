@@ -1,14 +1,13 @@
-package com.tuvarna.oop2project.models;
+package com.tuvarna.oop2project.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+import java.util.ArrayList;
 
 @Entity
-@Table(name = "guests") // Maps this class to the "guests" table in the database
 public class Guest {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increment for the primary key
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
     @Column(nullable = false)
     private String name;
@@ -16,19 +15,21 @@ public class Guest {
     @Column(nullable = false, unique = true)
     private String phone;
 
+    @Column(nullable = false)
     private String address;
 
-    @ManyToOne
-    @JoinColumn(name = "room_id", nullable = false)
-    private Room room;
+    @Column
+    private Float rating;
 
-    private double rating;
+    @ManyToMany(mappedBy = "guests")
+    private ArrayList<Reservation> reservations;
 
-    public long getId() {
+    // Getters and Setters
+    public Integer getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -56,19 +57,19 @@ public class Guest {
         this.address = address;
     }
 
-    public Room getRoom() {
-        return room;
+    public ArrayList<Reservation> getReservations() {
+        return reservations;
     }
 
-    public void setRoom(Room room) {
-        this.room = room;
+    public void setReservations(ArrayList<Reservation> reservations) {
+        this.reservations = reservations;
     }
 
-    public double getRating() {
+    public Float getRating() {
         return rating;
     }
 
-    public void setRating(double rating) {
+    public void setRating(Float rating) {
         this.rating = rating;
     }
 }

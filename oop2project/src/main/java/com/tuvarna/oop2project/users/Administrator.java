@@ -12,7 +12,7 @@ import java.io.IOException;
 public class Administrator extends User{
 
     public Administrator (Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("administrator/administratorMainPage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("fxml/administrator/administratorMainPage.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Hotel Manager V0.0.0 - ADMINISTRATOR MAIN PAGE");
         stage.setScene(scene);
