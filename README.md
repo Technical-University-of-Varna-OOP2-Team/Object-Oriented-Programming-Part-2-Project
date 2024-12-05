@@ -15,10 +15,11 @@ University group project for "Object Oriented Programming - Part 2 Project"
 
 - [Java](https://www.oracle.com/java/)
 - [JavaFX](https://openjfx.io/)
-- [PosgreSQL](https://www.postgresql.org/)
+- [MySQL](https://www.mysql.com/)
 - [JUnit](https://junit.org/junit5/)
 - [Log4j](https://logging.apache.org/log4j/2.x/)
 - [Maven](https://maven.apache.org/)
+- [Hibernate](https://hibernate.org/orm/)
 
 ## License
 
