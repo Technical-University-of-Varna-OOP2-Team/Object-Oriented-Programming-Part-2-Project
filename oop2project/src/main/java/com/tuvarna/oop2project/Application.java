@@ -7,8 +7,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import com.tuvarna.oop2project.entity.Role;
+import org.hibernate.cfg.Configuration;
 
 import java.io.IOException;
 
@@ -24,11 +26,15 @@ public class Application extends javafx.application.Application {
         loginStage.setResizable(false);
         loginStage.centerOnScreen();
         loginStage.show();
+
+        //To seed the database from the db_seed.sql file
+        //DatabaseSeeder.main(null);
+
     }
 
     public static void main(String[] args) {
         // TEST CODE
-        /*Session session = null;
+       /*Session session = null;
         Transaction transaction = null;
 
         try{
