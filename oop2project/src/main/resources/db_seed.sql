@@ -1,5 +1,4 @@
 
-INSERT INTO Role (name) VALUES ('Administrator');
 INSERT INTO Role (name) VALUES ('User');
 INSERT INTO Role (name) VALUES ('Manager');
 INSERT INTO Role (name) VALUES ('Owner');
