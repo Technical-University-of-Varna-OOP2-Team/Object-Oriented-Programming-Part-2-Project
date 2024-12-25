@@ -5,13 +5,14 @@ import com.tuvarna.oop2project.DatabaseConnection;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import java.io.IOException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import java.sql.*;
 
@@ -80,11 +81,59 @@ public class administratorHotelCreationController {
                 return;
             }
 
-            insertHotelToDatabase(hotelName, floorsCount, roomsPerFloor, address, ownerId);
+            showHotelLayout(hotelName, floorsCount, roomsPerFloor, address, ownerId);
 
         } catch (NumberFormatException e) {
             showAlert("Input Error", "Floors count and rooms per floor must be numeric.");
         }
+    }
+
+    private void showHotelLayout(String hotelName, int floorsCount, int roomsPerFloor, String address, int ownerId) {
+        Stage popupWindow = new Stage();
+        popupWindow.setTitle("Hotel Layout");
+
+        VBox vBox = new VBox(10);
+
+        GridPane gridPane = new GridPane();
+        gridPane.setHgap(10);
+        gridPane.setVgap(10);
+
+        for (int floor = 1; floor <= floorsCount; floor++) {
+            for (int room = 1; room <= roomsPerFloor; room++) {
+                String roomNumber = floor + String.format("%02d", room);; // Concatenate floor and room number
+                Label roomLabel = new Label(roomNumber);
+                gridPane.add(roomLabel, room - 1, floor - 1); // Add label to grid (columns, rows)
+            }
+        }
+        VBox roomLayoutBox = new VBox(10);
+        roomLayoutBox.getChildren().add(gridPane);  // Add GridPane to VBox
+
+        // Create "OK" button to confirm the layout
+        Button okButton = new Button("OK");
+        okButton.setOnAction(event -> {
+            // Confirm the layout and proceed with hotel creation
+            popupWindow.close();
+            insertHotelToDatabase(hotelName, floorsCount, roomsPerFloor, address, ownerId);
+        });
+
+        // Create "Abort" button to cancel the operation
+        Button abortButton = new Button("Abort");
+        abortButton.setOnAction(event -> {
+            // Close the popup without submitting
+            popupWindow.close();
+        });
+
+        // Create an HBox for the buttons and add it to the VBox
+        HBox buttonBox = new HBox(10); // Horizontal spacing between buttons
+        buttonBox.getChildren().addAll(okButton, abortButton);
+
+        // Add the room layout and buttons to the main VBox
+        vBox.getChildren().addAll(roomLayoutBox, buttonBox);  // First add the rooms, then the buttons
+
+        // Set the scene and show the popup window
+        Scene scene = new Scene(vBox, 400, 400); // Set the size of the popup window
+        popupWindow.setScene(scene);
+        popupWindow.show();
     }
 
     private int getOwnerIdByUsername(String username) {
