@@ -1,4 +1,4 @@
-package com.tuvarna.oop2project.controllers;
+package com.tuvarna.oop2project.controllers.owner;
 
 import javafx.fxml.FXML;
 
