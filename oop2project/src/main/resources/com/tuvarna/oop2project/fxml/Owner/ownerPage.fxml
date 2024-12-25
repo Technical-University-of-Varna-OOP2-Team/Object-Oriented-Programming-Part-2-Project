@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.owner.OwnerPageController">
+    <children>
+        <!-- Navigation Menu -->
+        <FlowPane prefHeight="30.0" prefWidth="900.0">
+            <children>
+               <!-- <Button text="Home" onAction="#goToHomePage" prefWidth="100.0"/>
+                <Button text="Hotel Info" onAction="#goToHotelInfoPage" prefWidth="150.0"/>
+                <Button text="Room Management" onAction="#goToRoomManagementPage" prefWidth="150.0"/>
+                <Button text="Services" onAction="#goToServicesPage" prefWidth="100.0"/>
+                <Button text="Logout" onAction="#logout" prefWidth="100.0"/> -->
+            </children>
+        </FlowPane>
+
+        <!-- Owner Page Content -->
+        <VBox layoutX="20.0" layoutY="80.0" spacing="20.0">
+            <!-- Hotel Info Section -->
+            <VBox>
+                <Label text="Hotel Information" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <TextField fx:id="hotelNameField" promptText="Hotel Name" prefWidth="300.0"/>
+                <TextField fx:id="hotelAddressField" promptText="Hotel Address" prefWidth="300.0"/>
+                <TextField fx:id="floorsCountField" promptText="Number of Floors" prefWidth="300.0"/>
+                <TextField fx:id="roomsCountField" promptText="Rooms per Floor" prefWidth="300.0"/>
+            </VBox>
+
+            <!-- Room Management Section -->
+            <VBox>
+                <Label text="Room Management" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <TableView fx:id="roomsTable">
+                    <columns>
+                        <TableColumn text="Floor" />
+                        <TableColumn text="Room Number" />
+                        <TableColumn text="Type" />
+                        <TableColumn text="Status" />
+                    </columns>
+                </TableView>
+                <!-- <Button text="Add Room" onAction="#addRoom" prefWidth="100.0"/> -->
+             </VBox>
+
+             <!-- Hotel Services Section -->
+            <VBox>
+                <Label text="Hotel Services" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <!-- <Button text="Add Service" onAction="#addService" prefWidth="150.0"/>
+                 <Button text="View Services" onAction="#viewServices" prefWidth="150.0"/> -->
+             </VBox>
+         </VBox>
+     </children>
+ </AnchorPane>
