@@ -1,6 +1,7 @@
 package com.tuvarna.oop2project.controllers;
 
 import com.tuvarna.oop2project.Application;
+import com.tuvarna.oop2project.DatabaseConnection;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -21,9 +22,7 @@ public class administratorCreateOwnerController {
 
     @FXML
     private PasswordField passwordField;
-    private static final String URL = "jdbc:mysql://localhost:3306/HotelManagement";
-    private static final String USER = "root";
-    private static final String PASSWORD = "123456";
+
 
     @FXML
     public void createOwner() {
@@ -52,7 +51,7 @@ public class administratorCreateOwnerController {
         }
         String query = "INSERT INTO account (username, password, role_id) VALUES (?, ?, ?)";
 
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+        try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(query)) {
 
             // Set parameters
@@ -76,7 +75,7 @@ public class administratorCreateOwnerController {
     private boolean isUsernameTaken(String username) {
         String checkQuery = "SELECT COUNT(*) FROM account WHERE username = ?";
 
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+        try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(checkQuery)) {
 
             stmt.setString(1, username);
@@ -96,7 +95,7 @@ public class administratorCreateOwnerController {
 
     private int getRoleIdByName(String roleName) {
         String query = "SELECT id FROM role WHERE name = ?";
-        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+        try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(query)) {
 
             stmt.setString(1, roleName);

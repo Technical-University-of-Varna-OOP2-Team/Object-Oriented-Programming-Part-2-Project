@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.layout.AnchorPane?>
-
-<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+
 <AnchorPane prefHeight="582.0" prefWidth="950.0" stylesheets="@../css/administratorHotelCreationStyles.css" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tuvarna.oop2project.controllers.administratorHotelCreationController">
    <children>
       <FlowPane prefHeight="26.0" prefWidth="950.0">
@@ -16,5 +17,16 @@
             <Button fx:id="hotelManagementTab" mnemonicParsing="false" onAction="#goToAdminHotelManagementPage" prefHeight="26.0" prefWidth="148.0" text="Hotel Management" />
          </children>
       </FlowPane>
+      <ComboBox fx:id="ownerComboBox" layoutX="163.0" layoutY="84.0" prefWidth="150.0" />
+      <Label layoutX="42.0" layoutY="88.0" text="Owner:" />
+      <Label layoutX="42.0" layoutY="157.0" text="Name of the hotel:" />
+      <TextField fx:id="hotelNameField" layoutX="164.0" layoutY="153.0" />
+      <Label layoutX="42.0" layoutY="215.0" text="Floors count:" />
+      <TextField fx:id="floorsCountField" layoutX="164.0" layoutY="211.0" />
+      <Label layoutX="42.0" layoutY="270.0" text="Rooms per floor:" />
+      <TextField fx:id="roomsPerFloorField" layoutX="164.0" layoutY="266.0" />
+      <Label layoutX="42.0" layoutY="332.0" text="Address:" />
+      <TextField fx:id="addressField" layoutX="164.0" layoutY="328.0" />
+      <Button layoutX="534.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Submit" onAction="#submitHotel" />
    </children>
 </AnchorPane>
